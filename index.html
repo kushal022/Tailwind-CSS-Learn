@@ -1,12 +1,79 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ... -->
-  <link href="dist/tailwind.css" rel="stylesheet"/>
+  <link href="dist/tailwind.css" rel="stylesheet" />
+
+  <title>kushal_tailwind</title>
 </head>
-<body>
-  <h1 class="">hello</h1>
+
+<body class="bg-gray-300">
+
+  <nav class="text-white bg-green-800">
+    <div class="hidden md:block">
+      <!-- hidden for small device and block(view) for large device -->
+      <div class="flex items-center  justify-between">
+        <!-- justify use for spacing b/w items(contant) -->
+        <!-- items-center is use for center in y-axis -->
+        <div class=" flex space-x-3 ml-3 ">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="flex items-center p-2.5">
+          <img class="w-35 h-12" src="img/kushalLogo.png" alt="Workflow" />
+        </div>
+
+        <div class="flex space-x-3 mr-3">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="block md:hidden">
+      <!-- block(view) for small and hidden for large device -->
+      <div class="flex items-center  justify-between">
+        <div>
+          <img class="w-35 h-12" src="img/kushalLogo.png" />
+        </div>
+        <div class="mr-3">
+          <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="hidden" id="mobileMenuContent">
+        <div class="flex flex-col text-xl">
+          <!-- we can use also grid class for make col -->
+          <a href="#" class="p-3">Home</a>
+          <a href="#" class="p-3">About</a>
+          <a href="#" class="p-3">Contact</a>
+        </div>
+
+        <div class="pb-3">
+          <a href="#" class="ml-3"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="ml-3"><i class="fab fa-instagram-square"></i></a>
+          <a href="#" class="ml-3"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="https://kit.fontawesome.com/8751dfaf92.js" crossorigin="anonymous"></script>
+  <!-- for navigation toggel switch  -->
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+    }
+  </script>
+
 </body>
+
 </html>
