@@ -10,9 +10,9 @@
   <title>kushal_tailwind</title>
 </head>
 
-<body class="bg-gray-300">
+<body class="bg-gradient-to-r from-yellow-300">
 
-  <nav class="bg-gradient-to-r from-yellow-600">
+  <nav id="nav" class="bg-gradient-to-r from-yellow-600">
     <div class="hidden md:block">
       <!-- hidden for small device and block(view) for large device -->
       <div class="flex items-center  justify-between">
@@ -62,11 +62,11 @@
     </div>
   </nav>
 
-  <section id="info" class="lg:p-10 md:p-5  bg-gradient-to-r from-yellow-300 ">
+  <section id="info" class="lg:p-10 md:p-5   ">
     <div class="grid md:grid-cols-2 grid-cols-1">
 
       <div id="info-text"
-        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 ">
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__zoomIn ">
         <h6 class="text-sm">Hello, I am <i class="fas fa-code"></i></h6>
         <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">Kushal</h1>
         <h3 class="lg:text-4xl md:text-3xl text-2xl mt-5">Web Designer</h3>
@@ -83,13 +83,83 @@
           <a href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
-      <div id="info-img" class=" flex flex-col justify-center align-middle w-auto lg:p-10 md:p-5 p-3">
+      <div id="info-img"
+        class=" flex flex-col justify-center align-middle w-auto lg:p-10 md:p-5 p-3 wow animate__animated animate__zoomIn">
         <img src="img/undraw_Code_thinking_re_gka2.svg" />
       </div>
     </div>
   </section>
 
- 
+  <section id="blog">
+    <div class="px-10 pt-5  text-4xl">
+      <h1>Blogs</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-5 md:grid-cols-3  p-10 gap-5">
+
+      <div class="flex flex-col bg-gradient-to-r from-yellow-600  rounded-lg p-5 wow animate__animated animate__zoomIn">
+        <img class="rounded-lg" src="img/blog1.jpg" />
+        <h1 class="p-2 text-left font-bold text-lg">Learn HTML</h1>
+        <p class="p-2 text-left text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep
+          Working hard!!!</p>
+      </div>
+
+      <div class="flex flex-col bg-gradient-to-r from-yellow-600 rounded-lg p-5 wow animate__animated animate__zoomIn">
+        <img class="rounded-lg" src="img/blog2.jpg" />
+        <h1 class="p-2 text-left font-bold text-lg">Learn HTML</h1>
+        <p class="p-2 text-left text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep
+          Working hard!!!</p>
+      </div>
+
+      <div class="flex flex-col bg-gradient-to-r from-yellow-600 rounded-lg p-5 wow animate__animated animate__zoomIn">
+        <img class="rounded-lg" src="img/blog3.jpg" />
+        <h1 class="p-2 text-left font-bold text-lg">Learn HTML</h1>
+        <p class="p-2 text-left text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep
+          Working hard!!!</p>
+      </div>
+
+      <div class="flex flex-col bg-gradient-to-r from-yellow-600 rounded-lg p-5 wow animate__animated animate__zoomIn">
+        <img class="rounded-lg" src="img/blog4.jpg" />
+        <h1 class="p-2 text-left font-bold text-lg">Learn HTML</h1>
+        <p class="p-2 text-left text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep
+          Working hard!!!</p>
+      </div>
+
+      <div class="flex flex-col bg-gradient-to-r from-yellow-600 rounded-lg p-5 wow animate__animated animate__zoomIn">
+        <img class="rounded-lg" src="img/blog5.jpg" />
+        <h1 class="p-2 text-left font-bold text-lg">Learn HTML</h1>
+        <p class="p-2 text-left text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep
+          Working hard!!!</p>
+      </div>
+    </div>
+
+
+    <a href="#">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-5 m-10 border-4 rounded-xl  bg-gradient-to-r from-yellow-600 hover:border-yellow-600">
+        <img class="p-10 md:w-72" src="img/blg7.svg" />
+        <div class="flex flex-col  justify-center p-10 pt-0 md:pl-16">
+          <h1 class="md:font-bold text-2xl md:text-3xl hover:underline ">Learn HTML</h1>
+          <p class="text-sm mt-4">Learn html from basic with regularly. Keep Learning, Keep Working
+            hard!!!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-5 m-10 border-4 rounded-xl  bg-gradient-to-r from-yellow-600 hover:border-yellow-600">
+        <img class="p-10 md:w-72" src="img/blg1.svg" />
+        <div class="flex flex-col justify-center p-10 pt-0 md:pl-16">
+          <h1 class="md:font-bold text-2xl md:text-3xl hover:underline ">Google SEO Management</h1>
+          <p class="text-sm mt-4">Learn html from basic with regularly. Keep Learning, Keep Working
+            hard!!!</p>
+        </div>
+      </div>
+    </a>
+  </section>
+
+
   <script src="https://kit.fontawesome.com/8751dfaf92.js" crossorigin="anonymous"></script>
   <!-- for navigation toggel switch  -->
   <script>
