@@ -12,7 +12,7 @@
   <title>kushal_tailwind</title>
 </head>
 
-<body class="bg-gradient-to-r from-yellow-300">
+<body id="Home" class="bg-gradient-to-r from-yellow-300">
 
   <nav id="nav" class="bg-gradient-to-r from-yellow-400">
     <div class="hidden md:block">
@@ -20,10 +20,12 @@
       <div class="flex items-center  justify-between">
         <!-- justify use for spacing b/w items(contant) -->
         <!-- items-center is use for center in y-axis -->
-        <div class=" flex space-x-3 ml-3 ">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+        <div class=" flex space-x-3 ml-3">
+          <a href="#Home" class="hover:text-yellow-700 ">Home</a>
+          <a href="#blog" class="hover:text-yellow-700 "> Blog</a>
+          <a href="#service" class="hover:text-yellow-700 ">Service</a>
+          <a href="#portfolio"  class="hover:text-yellow-700 ">Portfolio</a>
+          <a href="#footer" class="hover:text-yellow-700 ">Contact</a>
         </div>
 
         <div class="flex items-center p-2.5">
@@ -31,12 +33,14 @@
         </div>
 
         <div class="flex space-x-3 mr-3">
-          <a href="#"><i class="fab fa-facebook-square text-yellow-600"></i></a>
-          <a href="#"><i class="fab fa-instagram-square text-yellow-600"></i></a>
-          <a href="#"><i class="fab fa-twitter-square text-yellow-600" ></i></a>
+          <a href="#"><i class="fab fa-facebook-square text-yellow-600 hover:text-yellow-700"></i></a>
+          <a href="#"><i class="fab fa-instagram-square text-yellow-600 hover:text-yellow-700"></i></a>
+          <a href="#"><i class="fab fa-twitter-square text-yellow-600 hover:text-yellow-700"></i></a>
         </div>
       </div>
     </div>
+
+    <!-- for mobile nav -->
     <div class="block md:hidden">
       <!-- block(view) for small and hidden for large device -->
       <div class="flex items-center  justify-between">
@@ -48,17 +52,19 @@
         </div>
       </div>
       <div class="hidden" id="mobileMenuContent">
-        <div class="flex flex-col text-xl">
+        <div class="flex flex-col text-xl p-5">
           <!-- we can use also grid class for make col -->
-          <a href="#" class="p-3">Home</a>
-          <a href="#" class="p-3">About</a>
-          <a href="#" class="p-3">Contact</a>
+          <a href="#Home" class="hover:text-yellow-700 ">Home</a>
+          <a href="#blog" class="hover:text-yellow-700 "> Blog</a>
+          <a href="#service" class="hover:text-yellow-700 ">Service</a>
+          <a href="#portfolio"  class="hover:text-yellow-700 ">Portfolio</a>
+          <a href="#footer" class="hover:text-yellow-700 ">Contact</a>
         </div>
 
-        <div class="pb-3">
-          <a href="#" class="ml-3"><i class="fab fa-facebook-square"></i></a>
-          <a href="#" class="ml-3"><i class="fab fa-instagram-square"></i></a>
-          <a href="#" class="ml-3"><i class="fab fa-twitter-square"></i></a>
+        <div class="ml-5 pb-3 space-x-2">
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-twitter-square"></i></a>
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-instagram-square"></i></a>
         </div>
       </div>
     </div>
@@ -69,9 +75,9 @@
 
       <div id="info-text"
         class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__zoomIn ">
-        <h6 class="text-sm">Hello, I am <i class="fas fa-code"></i></h6>
-        <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">Kushal</h1>
-        <h3 class="lg:text-4xl md:text-3xl text-2xl mt-5">Web Designer</h3>
+        <h6 class="text-sm pt-3"> Hello, I am <i class="fas fa-code"></i></h6>
+        <h1 class="lg:text-6xl md:text-4xl text-3xl mt-3">Kushal</h1>
+        <h3 class="lg:text-4xl md:text-3xl text-2xl mt-5">Web Designer  <i class="fas fa-globe fa-spin"></i></h3>
         <p class="text-sm md:mt-14 mt-9"> If you think then you can create a new things.
           <br />
           I am passionate about my work and always try
@@ -263,121 +269,156 @@
                 <p>Free resource that will help nderstand thecv designc process and improve theroi
                   nderstand.</p>
                 <ul class="my-5">
-                  <li><i class="fas fa-angle-right"></i> HTML 5</HTML></li>
-                  <li><i class="fas fa-angle-right"></i> CSS 3</li>
-                  <li><i class="fas fa-angle-right"></i> JAVA script</li>
-                  <li><i class="fas fa-angle-right"></i> SEO</li>
-                  <li><i class="fas fa-angle-right"></i> UI / UX</li>
-                  <li><i class="fas fa-angle-right"></i> Pixlr</li>
-                  <li><i class="fas fa-angle-right"></i> Tailwind css</li>
-                </ul>
-                <a class="" href="#"><button class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500  w-full">view  <i class="fas fa-eye"></i></button></a>
-              </div>
-        
-              <div id="slide-img" class="w-3/4 md:p-10 p-3">
-                <img class="rounded-lg" src="img/delicious1.jpg">
-              </div> 
-            </div>
+                  <li><i class="fas fa-angle-right"></i> HTML 5
 
-          </li>
-          <li class="splide__slide">
-            <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
-              <div id="slid-detail" class="md:p-10 p-3 mx-10">
-                <h1 class="text-xl">ECOBIZ</h1>
-                <p>Free resource that will help nderstand thecv designc process and improve theroi
-                  nderstand.</p>
-                <ul class="my-5">
-                  <li><i class="fas fa-angle-right"></i> HTML 5</HTML></li>
-                  <li><i class="fas fa-angle-right"></i> CSS 3</li>
-                  <li><i class="fas fa-angle-right"></i> JAVA script</li>
-                  <li><i class="fas fa-angle-right"></i> SEO</li>
-                  <li><i class="fas fa-angle-right"></i> UI / UX</li>
-                  <li><i class="fas fa-angle-right"></i> Pixlr</li>
-                  <li><i class="fas fa-angle-right"></i> Tailwind css</li>
-                </ul>
-                <a class="" href="#"><button class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view  <i class="fas fa-eye"></i></button></a>
-              </div>
-        
-              <div id="slide-img" class="w-3/4 md:p-10 p-3">
-                <img class="rounded-lg" src="img/delicious2.png">
-              </div> 
-            </div>
-          </li>
-          
-          <li class="splide__slide">
-            <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
-              <div id="slid-detail" class="md:p-10 p-3 mx-10">
-                <h1 class="text-xl">DELICIOUS</h1>
-                <p>Free resource that will help nderstand thecv designc process and improve theroi
-                  nderstand.</p>
-                <ul class="my-5">
-                  <li><i class="fas fa-angle-right"></i> HTML 5</HTML></li>
-                  <li><i class="fas fa-angle-right"></i> CSS 3</li>
-                  <li><i class="fas fa-angle-right"></i> JAVA script</li>
-                  <li><i class="fas fa-angle-right"></i> SEO</li>
-                  <li><i class="fas fa-angle-right"></i> UI / UX</li>
-                  <li><i class="fas fa-angle-right"></i> Pixlr</li>
-                  <li><i class="fas fa-angle-right"></i> Tailwind css</li>
-                </ul>
-                <a class="" href="#"><button class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view  <i class="fas fa-eye"></i></button></a>
-              </div>
-        
-              <div id="slide-img" class="w-3/4 md:p-10 p-3">
-                <img class="rounded-lg" src="img/delicious3.jpg">
-              </div> 
-            </div>
-          </li>
+</HTML>
+</li>
+<li><i class="fas fa-angle-right"></i> CSS 3</li>
+<li><i class="fas fa-angle-right"></i> JAVA script</li>
+<li><i class="fas fa-angle-right"></i> SEO</li>
+<li><i class="fas fa-angle-right"></i> UI / UX</li>
+<li><i class="fas fa-angle-right"></i> Pixlr</li>
+<li><i class="fas fa-angle-right"></i> Tailwind css</li>
+</ul>
+<a class="" href="#"><button
+    class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500  w-full">view
+    <i class="fas fa-eye"></i></button></a>
+</div>
 
-          <li class="splide__slide">
-            <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
-              <div id="slid-detail" class="md:p-10 p-3 mx-10">
-                <h1 class="text-xl">ELLEN WHITE</h1>
-                <p>Free resource that will help nderstand thecv designc process and improve theroi
-                  nderstand.</p>
-                <ul class="my-5">
-                  <li><i class="fas fa-angle-right"></i> HTML 5</HTML></li>
-                  <li><i class="fas fa-angle-right"></i> CSS 3</li>
-                  <li><i class="fas fa-angle-right"></i> JAVA script</li>
-                  <li><i class="fas fa-angle-right"></i> SEO</li>
-                  <li><i class="fas fa-angle-right"></i> UI / UX</li>
-                  <li><i class="fas fa-angle-right"></i> Pixlr</li>
-                  <li><i class="fas fa-angle-right"></i> Tailwind css</li>
-                </ul>
-                <a class="" href="#"><button class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view  <i class="fas fa-eye"></i></button></a>
-              </div>
-        
-              <div id="slide-img" class="w-3/4 md:p-10 p-3">
-                <img class="rounded-lg" src="img/delicious4.jpg">
-              </div> 
-            </div>
-          </li>
-        </ul>
-      </div>
+<div id="slide-img" class="w-3/4 md:p-10 p-3">
+  <img class="rounded-lg" src="img/delicious1.jpg">
+</div>
+</div>
+
+</li>
+<li class="splide__slide">
+  <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
+    <div id="slid-detail" class="md:p-10 p-3 mx-10">
+      <h1 class="text-xl">ECOBIZ</h1>
+      <p>Free resource that will help nderstand thecv designc process and improve theroi
+        nderstand.</p>
+      <ul class="my-5">
+        <li><i class="fas fa-angle-right"></i> HTML 5
+
+          </HTML>
+        </li>
+        <li><i class="fas fa-angle-right"></i> CSS 3</li>
+        <li><i class="fas fa-angle-right"></i> JAVA script</li>
+        <li><i class="fas fa-angle-right"></i> SEO</li>
+        <li><i class="fas fa-angle-right"></i> UI / UX</li>
+        <li><i class="fas fa-angle-right"></i> Pixlr</li>
+        <li><i class="fas fa-angle-right"></i> Tailwind css</li>
+      </ul>
+      <a class="" href="#"><button
+          class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view
+          <i class="fas fa-eye"></i></button></a>
     </div>
-   
-  </section>
+
+    <div id="slide-img" class="w-3/4 md:p-10 p-3">
+      <img class="rounded-lg" src="img/delicious2.png">
+    </div>
+  </div>
+</li>
+
+<li class="splide__slide">
+  <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
+    <div id="slid-detail" class="md:p-10 p-3 mx-10">
+      <h1 class="text-xl">DELICIOUS</h1>
+      <p>Free resource that will help nderstand thecv designc process and improve theroi
+        nderstand.</p>
+      <ul class="my-5">
+        <li><i class="fas fa-angle-right"></i> HTML 5
+
+          </HTML>
+        </li>
+        <li><i class="fas fa-angle-right"></i> CSS 3</li>
+        <li><i class="fas fa-angle-right"></i> JAVA script</li>
+        <li><i class="fas fa-angle-right"></i> SEO</li>
+        <li><i class="fas fa-angle-right"></i> UI / UX</li>
+        <li><i class="fas fa-angle-right"></i> Pixlr</li>
+        <li><i class="fas fa-angle-right"></i> Tailwind css</li>
+      </ul>
+      <a class="" href="#"><button
+          class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view
+          <i class="fas fa-eye"></i></button></a>
+    </div>
+
+    <div id="slide-img" class="w-3/4 md:p-10 p-3">
+      <img class="rounded-lg" src="img/delicious3.jpg">
+    </div>
+  </div>
+</li>
+
+<li class="splide__slide">
+  <div id="portfolio-slid" class="grid md:grid-cols-2 grid-cols-1 place-items-center rounded-lg bg-white">
+    <div id="slid-detail" class="md:p-10 p-3 mx-10">
+      <h1 class="text-xl">ELLEN WHITE</h1>
+      <p>Free resource that will help nderstand thecv designc process and improve theroi
+        nderstand.</p>
+      <ul class="my-5">
+        <li><i class="fas fa-angle-right"></i> HTML 5
+
+          </HTML>
+        </li>
+        <li><i class="fas fa-angle-right"></i> CSS 3</li>
+        <li><i class="fas fa-angle-right"></i> JAVA script</li>
+        <li><i class="fas fa-angle-right"></i> SEO</li>
+        <li><i class="fas fa-angle-right"></i> UI / UX</li>
+        <li><i class="fas fa-angle-right"></i> Pixlr</li>
+        <li><i class="fas fa-angle-right"></i> Tailwind css</li>
+      </ul>
+      <a class="" href="#"><button
+          class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 w-full">view
+          <i class="fas fa-eye"></i></button></a>
+    </div>
+
+    <div id="slide-img" class="w-3/4 md:p-10 p-3">
+      <img class="rounded-lg" src="img/delicious4.jpg">
+    </div>
+  </div>
+</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<footer id="footer" class="p-10 grid place-items-center bg-gray-800 text-white">
+  <i class="fas fa-basketball-ball text-2xl fa-spin"></i>
+  <h1 class="my-5">kushal.learn022@gmail.com</h1>
+  <div>
+    <a href="#"><i class="fab fa-facebook-square text-yellow-400"></i></a>
+    <a href="#"><i class="fab fa-instagram-square text-yellow-400 mx-3"></i></a>
+    <a href="#"><i class="fab fa-twitter-square text-yellow-400"></i></a>
+  </div>
+</footer>
+
+<div class="fixed bottom-0 right-0 p-5 text-3xl">
+  <a href="#Home" class="text-yellow-400"><i class="fas fa-angle-up"></i></a>
+</div>
 
 
-  <script src="https://kit.fontawesome.com/8751dfaf92.js" crossorigin="anonymous"></script>
-  <!-- for navigation toggel switch  -->
-  <script>
-    function toggleMenu() {
-      const mobileMenuContent = document.getElementById('mobileMenuContent')
-      if (mobileMenuContent.getAttribute('class') === 'hidden') {
-        mobileMenuContent.setAttribute('class', 'block')
-      } else {
-        mobileMenuContent.setAttribute('class', 'hidden')
-      }
+<script src="https://kit.fontawesome.com/8751dfaf92.js" crossorigin="anonymous"></script>
+<!-- for navigation toggel switch  -->
+<script>
+  function toggleMenu() {
+    const mobileMenuContent = document.getElementById('mobileMenuContent')
+    if (mobileMenuContent.getAttribute('class') === 'hidden') {
+      mobileMenuContent.setAttribute('class', 'block')
+    } else {
+      mobileMenuContent.setAttribute('class', 'hidden')
     }
-  </script>
+  }
+</script>
 <!-- for slider use js -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script>
-	document.addEventListener( 'DOMContentLoaded', function () {
-		new Splide( '.splide' ).mount();
-	} );
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide').mount();
+  });
 </script>
 
 
 </body>
+
 </html>
