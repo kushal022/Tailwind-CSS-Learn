@@ -8,6 +8,11 @@
   <link href="dist/tailwind.css" rel="stylesheet" />
   <!-- for slide js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <!-- animation link of animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
   <title>kushal_tailwind</title>
 </head>
@@ -74,7 +79,7 @@
     <div class="grid md:grid-cols-2 grid-cols-1">
 
       <div id="info-text"
-        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__zoomIn ">
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__lightSpeedInLeft ">
         <h6 class="text-sm pt-3"> Hello, I am <i class="fas fa-code"></i></h6>
         <h1 class="lg:text-6xl md:text-4xl text-3xl mt-3">Kushal</h1>
         <h3 class="lg:text-4xl md:text-3xl text-2xl mt-5">Web Designer  <i class="fas fa-globe fa-spin"></i></h3>
@@ -92,7 +97,7 @@
         </div>
       </div>
       <div id="info-img"
-        class=" flex flex-col justify-center align-middle w-auto lg:p-10 md:p-5 p-3 wow animate__animated animate__zoomIn">
+        class=" flex flex-col justify-center align-middle w-auto lg:p-10 md:p-5 p-3 wow animate__animated animate__lightSpeedInRight">
         <img src="img/undraw_Code_thinking_re_gka2.svg" />
       </div>
     </div>
@@ -178,7 +183,7 @@
     </div>
     <div id="service-item" class="grid md:grid-cols-2 grid-cols-1 gap-5 lg:p-10 md:p-7 p-3">
 
-      <div id="first-item" class="grid grid-cols-12">
+      <div id="first-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-laptop text-2xl text-white"></i>
@@ -190,7 +195,7 @@
         </div>
       </div>
 
-      <div id="second-item" class="grid grid-cols-12">
+      <div id="second-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-server text-2xl text-white"></i>
@@ -202,7 +207,7 @@
         </div>
       </div>
 
-      <div id="third-item" class="grid grid-cols-12">
+      <div id="third-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-palette text-2xl text-white"></i>
@@ -214,7 +219,7 @@
         </div>
       </div>
 
-      <div id="fourth-item" class="grid grid-cols-12">
+      <div id="fourth-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-chart-pie text-2xl text-white"></i>
@@ -226,7 +231,7 @@
         </div>
       </div>
 
-      <div id="fifth-item" class="grid grid-cols-12">
+      <div id="fifth-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-lightbulb text-2xl text-white"></i>
@@ -238,7 +243,7 @@
         </div>
       </div>
 
-      <div id="sixth-item" class="grid grid-cols-12">
+      <div id="sixth-item" class="grid grid-cols-12 wow animate__animated animate__zoomIn">
         <div id="icon"
           class="col-span-2 p-5 bg-gradient-to-r from-yellow-400 rounded-l-xl flex justify-center place-items-center">
           <i class="fas fa-laptop-code text-2xl text-white"></i>
@@ -384,16 +389,16 @@
 </section>
 
 <footer id="footer" class="p-10 grid place-items-center bg-gray-800 text-white">
-  <i class="fas fa-basketball-ball text-2xl fa-spin"></i>
-  <h1 class="my-5">kushal.learn022@gmail.com</h1>
-  <div>
+  <i class="fas fa-basketball-ball text-2xl fa-spin wow"></i>
+  <h1 class="my-5 wow animate__animated animate__zoomIn">kushal.learn022@gmail.com</h1>
+  <div class="wow animate__animated animate__zoomIn">
     <a href="#"><i class="fab fa-facebook-square text-yellow-400"></i></a>
     <a href="#"><i class="fab fa-instagram-square text-yellow-400 mx-3"></i></a>
     <a href="#"><i class="fab fa-twitter-square text-yellow-400"></i></a>
   </div>
 </footer>
 
-<div class="fixed bottom-0 right-0 p-5 text-3xl">
+<div class="fixed bottom-0 right-0 p-5 text-3xl ">
   <a href="#Home" class="text-yellow-400"><i class="fas fa-angle-up"></i></a>
 </div>
 
@@ -415,8 +420,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     new Splide('.splide').mount();
+    // wow js
+    new WOW().init();
   });
 </script>
+
+<!-- wow js -->
+<script src="js/wow.min.js"></script>
 
 
 </body>
