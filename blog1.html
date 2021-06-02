@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ... -->
+  <link href="dist/tailwind.css" rel="stylesheet" />
+  <!-- for slide js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <!-- animation link of animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>kushal_tailwind/blog1</title>
+</head>
+
+<body id="Home" class="bg-gradient-to-r from-yellow-300">
+
+  <nav id="nav" class="bg-gradient-to-r from-yellow-400">
+    <div class="hidden md:block">
+      <!-- hidden for small device and block(view) for large device -->
+      <div class="flex items-center  justify-between">
+        <!-- justify use for spacing b/w items(contant) -->
+        <!-- items-center is use for center in y-axis -->
+        <div class=" flex space-x-3 ml-3">
+          <a href="index.html#Home" class="hover:text-yellow-700 ">Home</a>
+          <a href="index.html#blog" class="hover:text-yellow-700 "> Blog</a>
+          <a href="index.html#service" class="hover:text-yellow-700 ">Service</a>
+          <a href="index.html#portfolio" class="hover:text-yellow-700 ">Portfolio</a>
+          <a href="#footer" class="hover:text-yellow-700 ">Contact</a>
+        </div>
+
+        <div class="flex items-center p-2.5">
+          <img class="w-35 h-12" src="img/kushalLogo.png" alt="Workflow" />
+        </div>
+
+        <div class="flex space-x-3 mr-3">
+          <a href="#"><i class="fab fa-facebook-f text-yellow-400 hover:text-yellow-700"></i></a>
+          <a href="#"><i class="fab fa-instagram text-yellow-400 hover:text-yellow-700"></i></a>
+          <a href="#"><i class="fab fa-twitter text-yellow-400 hover:text-yellow-700"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in text-yellow-400 hover:text-yellow-700"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- for mobile nav -->
+    <div class="block md:hidden">
+      <!-- block(view) for small and hidden for large device -->
+      <div class="flex items-center  justify-between">
+        <div>
+          <img class="w-35 h-12" src="img/kushalLogo.png" />
+        </div>
+        <div class="mr-3">
+          <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="hidden" id="mobileMenuContent">
+        <div class="flex flex-col text-xl p-5">
+          <!-- we can use also grid class for make col -->
+          <a href="index.html#Home" class="hover:text-yellow-700 ">Home</a>
+          <a href="index.html#blog" class="hover:text-yellow-700 "> Blog</a>
+          <a href="index.html#service" class="hover:text-yellow-700 ">Service</a>
+          <a href="index.html#portfolio" class="hover:text-yellow-700 ">Portfolio</a>
+          <a href="#footer" class="hover:text-yellow-700 ">Contact</a>
+        </div>
+
+        <div class="ml-5 pb-3 space-x-2">
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-twitter"></i></a>
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-instagram"></i></a>
+          <a href="#" class=" hover:text-yellow-700"><i class="fab fa-linkedin-in"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="blog">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-5 m-10 border-4 rounded-xl  bg-gradient-to-r from-yellow-400 ">
+      <img class="p-10 md:w-72" src="img/blg7.svg" />
+      <div class="flex flex-col  justify-center p-10 pt-0 md:pl-16">
+        <h1 class="md:font-bold text-2xl md:text-3xl ">Google SEO Managment</h1>
+        <p class="text-sm mt-4">Learn html from basic with regularly. Keep Learning, Keep Working
+          hard!!!</p>
+        <h1 class="mt-3 text-sm font-bold">by kushal</h1>
+        <h1>31 may,2021</h1>
+      </div>
+    </div>
+
+    <div id="description" class="md:p-24 md:pt-16 p-10">
+      <p>
+        In this blog, you can learn how to improve your website<span class="font-bold text-yellow-600"> Search Engine Optimization</span> and get your website in top
+        search.
+        <br>
+        <br>
+        Before starting work on Blog or any content site. You should have to <span class="font-bold text-yellow-600">do some research on whether your technology
+        stack supports SEO things or not.</span>
+        <br>
+        <br>
+        For example: I am using <span class="font-bold text-yellow-600">Angular Scully</span> which is an angular static site generator. The problem which I faced with
+        the only angular is not enough because as other SPA Technology, it is render HTML after page load so Whenever
+        crawler scrap your website. It failed to find out the meta tags.
+        <br>
+        <br>
+        The solution is you have to use <span class="font-bold text-yellow-600">Server Side Rendering</span> or <span class="font-bold text-yellow-600">Static Site Generator</span> or rendertron. There are many
+        options available for every SPA(Angular, Vue, and React).
+        <br>
+        <br>
+        If you have already developed SPA application and you don't want to add server-side rendering then you can use
+        rendertron which is pretty much good design for this purpose.
+      </p>
+      <br>
+      <br>
+      <h1 class="text-3xl text-yellow-600">SEO(Search Engine Optimazation) Tips and Tricks</h1>
+      <br>
+      <h1 class="text-2xl">1. Register your domain to<span class="font-bold text-yellow-600"> Google Search Console</span></h1>
+      <br>
+      <p>Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and
+        make your site shine in Google Search results.</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Open Link <a href="https://search.google.com/search-console/welcome" class="text-blue-400 hover:underline"> https://search.google.com/search-console/welcome</a></p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Add your domain in URL prefix</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Verify your ownership</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Choose the HTML Tag verify technique which I think easy</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Done</p>
+      <br>
+      <br>
+      <h1 class="text-2xl">2. Choose the <span class="font-bold text-yellow-600">Best Title</span> for your Blog</h1>
+      <br>
+      <p>Ubersuggest tool which use to check trend and volume search about the topic. You can easily install the
+        extension and just search on google. It will show you details on the right side of the page.</p>
+      <br>
+      <p>Update your <span>&lt;title&gt;&lt;/title&gt;</span> tag with your title which is really important. The title
+        should not be the same
+        across whole the website.</p>
+      <br>
+      <p>This is the best SEO Tips and Tricks which helps you to find out the correct title for your content or blog.
+        For example:</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Open Link <a href="https://search.google.com/search-console/welcome" class="text-blue-400 hover:underline"> https://search.google.com/search-console/welcome</a></p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Add your domain in URL prefix</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Verify your ownership</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Choose the HTML Tag verify technique which I think easy</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Done</p>
+      <br>
+      <br>
+      <h1 class="text-2xl">3. Register your domain to <span class="font-bold text-yellow-600">Google Search Console</span></h1>
+      <br>
+      <p>Search Console tools and reports help you measure your site's Search traffic and performance, fix issues, and
+        make your site shine in Google Search results.</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Open Link <a href="https://search.google.com/search-console/welcome" class="text-blue-400 hover:underline"> https://search.google.com/search-console/welcome</a></p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Add your domain in URL prefix</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Verify your ownership</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Choose the HTML Tag verify technique which I think easy</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Done</p>
+      <br>
+      <br>
+      <h1 class="text-2xl">4. Choose the <span class="font-bold text-yellow-600"> Best Title</span> for your Blog</h1>
+      <br>
+      <p>Ubersuggest tool which use to check trend and volume search about the topic. You can easily install the
+        extension and just search on google. It will show you details on the right side of the page.</p>
+      <br>
+      <p>Ubersuggest tool which use to check trend and volume search about the topic. You can easily install the
+        extension and just search on google. It will show you details on the right side of the page.</p>
+      <br>
+      <p>Update your <span class="font-bold text-yellow-600"> &lt;title&gt;&lt;/title&gt;</span> tag with your title which is really important. The title
+        should not be the same
+        across whole the website.</p>
+      <br>
+      <p>This is the best SEO Tips and Tricks which helps you to find out the correct title for your content or blog.
+        For example:</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Open Link<a href="https://search.google.com/search-console/welcome" class="text-blue-400 hover:underline"> https://search.google.com/search-console/welcome</a></p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Add your domain in URL prefix</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Verify your ownership</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Choose the HTML Tag verify technique which I think easy</p>
+      <br>
+      <p><i class="fas fa-angle-right"></i> Done</p>
+    </div>
+  </section>
+
+  <footer id="footer" class="p-10 grid place-items-center bg-gray-800 text-white">
+    <i class="fas fa-basketball-ball text-2xl fa-spin wow"></i>
+    <a href="https://kushal.learn@gmail.com"
+      class="my-5 hover:underline wow animate__animated animate__zoomIn">kushal.learn022@gmail.com</a>
+    <div class="space-x-2  wow animate__animated animate__zoomIn">
+      <a href="#"><i class="fab fa-facebook-f text-gray-500 hover:text-gray-300"></i></a>
+      <a href="#"><i class="fab fa-instagram text-gray-500 hover:text-gray-300"></i></a>
+      <a href="#"><i class="fab fa-twitter text-gray-500 hover:text-gray-300"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in  text-gray-500 hover:text-gray-300"></i></a>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 right-0 p-5 text-3xl ">
+    <a href="#Home" class="text-yellow-400"><i class="fas fa-angle-up"></i></a>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/8751dfaf92.js" crossorigin="anonymous"></script>
+  <!-- for navigation toggel switch  -->
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+    }
+  </script>
+  <!-- for slider use js -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide').mount();
+      // wow js
+      new WOW().init();
+    });
+  </script>
+
+  <!-- wow js -->
+  <script src="js/wow.min.js"></script>
+
+
+</body>
+
+</html>
